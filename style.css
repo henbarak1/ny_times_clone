@@ -1,0 +1,76 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:    "page_title page_title page_title page_title page_title page_title"
+                            "big_articles big_articles big_articles big_articles big_articles side_headlines"                                                     
+                            "big_articles big_articles big_articles big_articles big_articles side_headlines"                                                      
+                            "big_articles big_articles big_articles big_articles big_articles side_headlines"                                                     
+                            "big_articles big_articles big_articles big_articles big_articles side_headlines"                                                      
+                            "big_articles big_articles big_articles big_articles big_articles side_headlines"                                                     
+                             "big_articles big_articles big_articles big_articles big_articles side_headlines"
+                              ;                      
+
+}
+.title{
+    grid-area: page_title;
+}
+.articles{
+    grid-area: big_articles;
+    display: grid;
+
+    grid-template-areas: "article1"
+                            "article2"
+                            "article3";
+}
+.article1{
+    grid-area: article1;
+
+}
+.article2{
+    grid-area: article2;
+
+}
+.article3{
+    grid-area: article3;
+
+}
+.side_headlines{
+    grid-area: side_headlines;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul {
+    display:flex;
+    list-style:none;
+    padding: 40px;
+    justify-content: center;
+  }
+  li{
+  
+    padding:2px ;
+  }
+
+  .navbar_up{
+
+  }
+  /* .images_part{
+    width: 30%;
+    height: 30%;
+  }
+  #hostages_pic#hospital_pic{
+     width: 300px;
+    height: 200px;
+
+
+  } */
+img{
+    height: 200px;
+    width: auto;
+}
+#Ny_times_pic{
+    height: 50px;
+}
+ 
